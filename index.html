@@ -130,6 +130,7 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
+        <div id="overflow-wrapper" class="overflow-auto">
         <div class="list-group list-group-flush">
             <div id="left-slide-top" class="bg-blue-color">
               <div align="center" class="containter">
@@ -146,8 +147,9 @@
                 </ul>
               </div>
             </div>
+            <div class="accordion" id="accordionExample">
             <div class="list-group-item bg-light">
-                <div class="accordion" id="accordionExample">
+                
                     <!-- Menu option 1 -->
                     <button id="menu1" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         Double Platforms
@@ -162,7 +164,7 @@
                             <button class="sub-menu-btn">5x10 Platform</button>
                         </div>
                     </div>
-                </div>
+             
             </div>
            <div class="list-group-item bg-light">
                <!-- Menu option 2 -->
@@ -301,6 +303,8 @@
                 </div>
             </div>
         </div>
+        </div>
+        </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -362,7 +366,8 @@
 </div>
 <!-- Optional JavaScript -->
 <script>
-    $("#menu-toggle").click(function(e) {
+    $( document ).ready(function() {
+        $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
@@ -375,6 +380,7 @@
         $("#top-nav-icon").toggleClass("top-nav-icon-rotate");
         $('#top-nav-small-container').toggle();
     });
+
     $( function() {
         $( "#menu1" ).on( "click", function() {
             $( "#menu1 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
@@ -401,6 +407,8 @@
             $( "#menu8 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
         });
     } );
+});
+   
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
