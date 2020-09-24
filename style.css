@@ -143,10 +143,12 @@ input:checked + .slider:before {
 #wrapper {
     overflow-x: hidden;
 }
-
+#overflow-wrapper
+{
+    height: 100vh;
+}
 #sidebar-wrapper {
     background: #cccccc;
-   
     height: 100vh;
     margin-left: -15rem;
     -webkit-transition: margin .25s ease-out;
@@ -259,7 +261,7 @@ input:checked + .slider:before {
     #nav-toggle-btn
     {
         display: block;
-        background: #012d54;
+        background: #b9d339;
         color: white;
         border: none;
         padding: 0px 15px 0px 15px;
